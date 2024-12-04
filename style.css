@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 2em;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #7d7d7d;
+    width: 120px;
+    height: 58px;
+    border-radius: 100px;
+    border: 1px #7d7d7d solid;
+}
+
+.circle {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    top: 5px;
+    right: 64px;
+    border-radius: 100px;
+    background-color: black;
+}
