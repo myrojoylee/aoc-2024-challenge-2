@@ -14,7 +14,17 @@ body {
     gap: 2em;
 }
 
-section {
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+    text-align: center;
+}
+
+label {
     position: relative;
     display: flex;
     justify-content: center;
@@ -22,15 +32,59 @@ section {
     width: 120px;
     height: 58px;
     border-radius: 100px;
-    border: 1px #7d7d7d solid;
+    transition: all 0.3s ease;
+}
+
+.toggle-check {
+    display: none;
 }
 
 .circle {
+    display: block;
     position: absolute;
     width: 47px;
     height: 47px;
     top: 5px;
     right: 64px;
-    border-radius: 100px;
+    border-radius: 50%;
     background-color: black;
+    transition: transform 0.2s linear;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+.checkmark {
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    right: 19px;
+    transition: opacity 0.1s ease;
+}
+
+img {
+    width: 26.33px;
+    height: 18.59px;
+}
+
+.checkmark:hover {
+    cursor: pointer;
+}
+
+label:has(.toggle-check:checked) {
+    background-color:  #02ff94;
+}
+
+.toggle-check:checked ~ .checkmark {
+   opacity: 1;
+}
+
+.toggle-check:not(:checked) ~ .checkmark {
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+.toggle-check:checked + .circle {
+    transform: translateX(56px);
 }
