@@ -14,7 +14,7 @@ Vanilla HTML/CSS was used for this challenge.
 
 A final webpage showing the layout for one photo is shown [here](https://myrojoylee.github.io/aoc-2024-challenge-2/).
 
-Demo below rotating between different layouts:
+Demo below rotating between states:
 
 ![Demo](assets/advent-2024-day2.gif)
 
