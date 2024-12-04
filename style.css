@@ -60,7 +60,7 @@ label {
     position: absolute;
     top: 20px;
     right: 19px;
-    transition: opacity 0.1s ease;
+    transition: opacity 0.3s ease;
 }
 
 img {
